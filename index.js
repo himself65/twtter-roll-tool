@@ -14,6 +14,10 @@ const agent =
     ? new ProxyAgent(proxy)
     : globalAgent
 
+if (proxy == null) {
+  console.log('no proxy enabled')
+}
+
 const params = new URLSearchParams(
   [
     ['query', `conversation_id:${tweetID}`],
