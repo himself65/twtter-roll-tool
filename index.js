@@ -10,7 +10,7 @@ const tweetID = process.env.TWEET_ID
 
 // in case cannot connect to the twitter, use yourself proxy
 const agent =
-  process.env.HTTPS_PROXY != null
+  proxy != null
     ? new ProxyAgent(proxy)
     : globalAgent
 
