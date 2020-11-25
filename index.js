@@ -48,7 +48,7 @@ const fetchReplies = async (next_token) => {
   }
   const {
     data: replies = [],
-    meta
+    meta = {}
   } = await fetch(
     'https://api.twitter.com/2/tweets/search/recent?' + params,
     {
