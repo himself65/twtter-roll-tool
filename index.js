@@ -58,7 +58,7 @@ const fetchReplies = async (next_token) => {
     }).then(async response => {
     return JSON.parse(await response.text())
   })
-  if (typeof meta.next_token === 'string') {
+  if (meta.next_token && typeof meta.next_token === 'string') {
     const nextReplies = await fetchReplies(meta.next_token)
     replies.push(...nextReplies)
   }
