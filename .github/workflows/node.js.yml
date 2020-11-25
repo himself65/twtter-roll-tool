@@ -4,9 +4,7 @@
 name: Roll Runner
 
 on:
-  schedule:
-# 13:45 in UTC+8
-    - cron: "45 5 25 11 4"
+  [push]
 
 jobs:
   build:
