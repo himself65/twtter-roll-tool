@@ -18,4 +18,4 @@ jobs:
       - run: node index.js
         env:
           TWITTER_TOKEN: ${{ secrets.TWITTER_TOKEN }}
-          TWEET_ID: 1331111567430012931
+          TWEET_ID: "1331111567430012931"
